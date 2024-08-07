@@ -1,0 +1,13 @@
+main{
+  width: 84.7%;
+  height: 81.3%;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width:375px){
+  main{
+    width: 88%;
+    height:auto;
+    flex-direction: column;
+  }
+}

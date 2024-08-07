@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url(../../assets/Rubik-VariableFont_wght.ttf);
+}
+#aboutpersonDiv{
+    width: 23.2%;
+    height: 100%;
+    background-color: hsl(235, 46%, 20%) ;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+#name_imgDiv{
+    width: 100%;
+    height: 67.8%;
+    background-color: hsl(246, 80%, 60%) ;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12.5%;
+    box-sizing: border-box;
+    padding-left: 11%;
+    padding-top: 13%;
+}
+#imgDiv{
+    width: 38%;
+    height: 26.5%;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#theIMG{
+    width: 93%;
+    height: 93%;
+}
+#txtDiv{
+    font-family: 'Rubik';
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    color: white;
+}
+#txtDiv>label{
+    font-weight: 300;
+    font-size: 14px;
+    color: hsl(236, 100%, 87%);
+    margin: 0%;
+}
+#txtDiv>h1{
+    font-weight: 300;
+    font-size: 39px;
+    margin: 0%;
+}
+
+#timesDiv{
+    width: 100%;
+    height: 32% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 11%;
+    row-gap: 13.8%;
+    color: hsl(236, 100%, 87%);
+    font-family: 'Rubik';
+    font-size: 18px;
+}
+#w{color: white;}
+#timesDiv>label:hover{
+    color: white;
+}
+@media only screen and (max-width:375px){
+    #aboutpersonDiv{
+        width: 100%;
+        height: 203px;
+    }
+    #name_imgDiv{
+        width: 100%;
+        height: 65%;
+        flex-direction: row;
+        column-gap: 6.5%;
+        padding-left: 6.9%;
+        padding-top: 0px;
+        align-items: center;
+    }
+    #imgDiv{
+        width: 65px;
+        height: 65px;
+    }
+    #theIMG{
+        width: 93%;
+        height: 93%;
+    }
+    #txtDiv>h1{
+        font-size: 24px;
+    }
+
+    #timesDiv{
+        height: 32.6% ;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-around;
+        padding-left: 0%;
+    }
+}

@@ -1,0 +1,8 @@
+#main{
+  width:45%;
+  height: 70%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}

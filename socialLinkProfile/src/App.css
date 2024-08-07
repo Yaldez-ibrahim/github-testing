@@ -1,0 +1,16 @@
+main{
+  width:29.5%;
+  height: 95%;
+  display: flex;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width:375px){
+  main{
+    width: 88%;
+  }
+}

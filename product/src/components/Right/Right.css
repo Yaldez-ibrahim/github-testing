@@ -1,0 +1,11 @@
+#rightDiv{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#priceDiv{
+    display: flex;
+}
