@@ -1,0 +1,14 @@
+main{
+  width:30%;
+  height: 65%;
+  display: flex;
+  background-color:white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width:375px){
+  main{
+    width: 88%;
+  }
+}
