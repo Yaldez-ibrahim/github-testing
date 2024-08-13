@@ -1,8 +1,0 @@
-#rightDiv{
-    width: 50%;
-    height: 93%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    row-gap: 10px;
-}
