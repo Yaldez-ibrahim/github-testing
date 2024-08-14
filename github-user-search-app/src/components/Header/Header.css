@@ -1,0 +1,31 @@
+#header{
+    width: 100%;
+    height:6.4% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-size: 26px;
+    font-family: "space-Mono-bold" ;
+    color: #FFFFFF;
+}
+#toggleMode{
+    width: 12%;
+    height: 52.6%;
+    display: flex;
+    column-gap: 17.9%;
+    align-items: center;
+}
+#toggleMode>label{
+    font-family: "space-Mono-bold" ;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+#toggleMode>img{
+    width: 22.4%;
+    height: 100%;
+}
+#toggleMode>input{
+    display: none;
+}
