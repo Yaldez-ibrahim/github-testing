@@ -16,6 +16,12 @@ main{
   align-items: center;
   justify-content: center;
 }
+.lightMain{
+  background-color: #F2F2F2;
+}
+.darkMain{
+  background-color: #141d2f;
+}
 #allpageContent{
   width: 50.6%;
   height: 84%;
@@ -23,6 +29,7 @@ main{
   flex-direction: column;
   row-gap: 4%;
 }
+
 @media only screen and (max-width:375px){
   #allpageContent{
     width: 90%;

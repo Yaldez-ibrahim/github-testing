@@ -1,13 +1,19 @@
 #Contentcomponent{
     width: 100%;
     height: 71.5%;
-    background-color:#1E2A47;
     border-radius: 15px;
     box-sizing: border-box;
     padding-top: 10%;
     display: flex;
     justify-content: center;
     column-gap: 5%;
+}
+.darkcc{
+    background-color:#1E2A47;
+}
+.lightcc{
+    
+    background-color:#ffffff;
 }
 #lift{
     width: 16%;

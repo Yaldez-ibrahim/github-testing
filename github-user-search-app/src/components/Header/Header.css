@@ -10,6 +10,12 @@ h1{
     font-family: "space-Mono-bold" ;
     color: #FFFFFF;
 }
+.lightdevfinder{
+    color: black;
+}
+.darkdevfinder{
+    color: #FFFFFF;
+}
 #toggleMode{
     width: 12%;
     height: 52.6%;
@@ -17,7 +23,12 @@ h1{
     column-gap: 17.9%;
     align-items: center;
 }
-#toggleMode>label{
+.lightMode{
+    font-family: "space-Mono-bold" ;
+    font-size: 13px;
+    color: black;
+}
+.darkMode{
     font-family: "space-Mono-bold" ;
     font-size: 13px;
     color: #FFFFFF;

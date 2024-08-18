@@ -1,10 +1,14 @@
 import "./SearchBar.css"
 import search from "../../../public/Combined Shape.png"
 import Contentcomponent from '../Contentcomponent/Contentcomponent'
+import { ThemeContext } from '../../App'
+import { useContext } from 'react'
 
 import { useEffect, useState } from 'react'
 
 function SearchBar() {
+  const { theme, setTheme } = useContext(ThemeContext)
+
   const [formData, setFormData] = useState({ searchedUser: "" })
   const [userArray, setUserArray] = useState({})
   const [userName, setUserName] = useState("")
@@ -38,7 +42,7 @@ function SearchBar() {
 
   return (
     <>
-      <form onSubmit={HandleOnsubmit} id='SearchBar'>
+      <form onSubmit={HandleOnsubmit} id="SearchBar" className={theme+'SearchBar'} >
         <img src={search} alt="Search Icon" />
 
         <input

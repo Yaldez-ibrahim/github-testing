@@ -1,32 +1,32 @@
 import React from 'react'
 import './Header.css'
-import light from '../../../public/002-sun.svg'
-import dark from '../../../public/moon.svg'
+import lightIcon from '../../../public/002-sun.svg'
+import darkIcon from '../../../public/moon.svg'
 import { ThemeContext } from '../../App'
 import { useContext } from 'react'
 
 function Header() {
-    const theme =useContext(ThemeContext)
+    const { theme, setTheme } = useContext(ThemeContext)
 
-    function onHandleChange(event){
-        let newValue
-        if(event.target.checked == false){
-            newValue='light'
-        }else if(event.target.checked == true){
-            newValue='dark'
-        }
-        theme.setTheme(newValue)
+    function onHandleChange() {
+        const newValue = theme === 'light' ? 'dark' : 'light'
+        setTheme(newValue)
     }
-  return (
-    <div id='header'>
-        <h1>devfinder</h1>
-        <div id='toggleMode' >
-            <label>{theme.theme}</label>
-            <img src={theme.theme}/>
-            <input type='checkbox' onChange={onHandleChange}/>
+
+    return (
+        <div id='header'>
+            <h1 className={theme+'devfinder'}>devfinder</h1>
+            <div id='toggleMode' onClick={onHandleChange}>
+                <label className={theme+'Mode'}>{theme === 'light' ? 'DARK' : 'LIGHT'}</label>
+                <img src={theme === 'light' ? darkIcon : lightIcon} alt="Theme Icon"/>
+                <input 
+                    type='checkbox' 
+                    onChange={onHandleChange} 
+                    checked={theme === 'dark'} 
+                />
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Header

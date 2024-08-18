@@ -2,14 +2,16 @@ import React from 'react'
 import './Contentcomponent.css'
 import SingleItem from '../SingleItem/SingleItem'
 
-import photo from "../../../public/Bitmap.png"
 import location from"../../../public/003-pin.svg"
 import urlIcon from"../../../public/002-url.png"
 import twitter from"../../../public/004-twitter.png"
 import office from"../../../public/001-office-building.png"
 
+import { ThemeContext } from '../../App'
+import { useContext } from 'react'
 
 function Contentcomponent(props) {
+    const { theme, setTheme } = useContext(ThemeContext)
     
     const ArrayOfObj=[
         {
@@ -30,7 +32,7 @@ function Contentcomponent(props) {
         }
     ]
   return (
-    <div id='Contentcomponent'>
+    <div id='Contentcomponent' className={theme+'cc'}>
         <img src={props.avatar_url} id='lift'></img>
         <div id='right'>
             <div id='top'>
