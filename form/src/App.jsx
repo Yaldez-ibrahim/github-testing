@@ -1,7 +1,8 @@
 import './App.css'
+import { useState } from 'react'
 
 function App() {
-  const [formData, setFormData] = useState({firstName:'',lastName:'',email:''})
+  const [formData, setFormData] = useState({firstName:"",lastName:"",email:""})
 
   function HandleOnsubmit(event)
   {
@@ -24,7 +25,7 @@ function App() {
         <label htmlFor='First-name'>first name</label>
         <input 
         id='First-name'
-        name='firstname'
+        name='firstName'
         value={formData.firstName}
         onChange={HandleOnchange}
         ></input>
@@ -34,7 +35,7 @@ function App() {
         <label htmlFor='last-name'>last name</label>
         <input 
         id='last-name'
-        name='lastname'
+        name='lastName'
         value={formData.lastName}
         onChange={HandleOnchange}
         ></input>
@@ -48,6 +49,8 @@ function App() {
         value={formData.email}
         onChange={HandleOnchange}
         ></input>
+
+        <button>submit</button>
       </form>
     </>
   )

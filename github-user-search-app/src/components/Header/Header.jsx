@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.css'
-import sun from '../../../public/002-sun.svg'
+import light from '../../../public/002-sun.svg'
+import dark from '../../../public/moon.svg'
 import { ThemeContext } from '../../App'
 import { useContext } from 'react'
 
@@ -11,7 +12,7 @@ function Header() {
         let newValue
         if(event.target.checked == false){
             newValue='light'
-        }else{
+        }else if(event.target.checked == true){
             newValue='dark'
         }
         theme.setTheme(newValue)
@@ -19,9 +20,9 @@ function Header() {
   return (
     <div id='header'>
         <h1>devfinder</h1>
-        <div id='toggleMode'>
-            <label>LIGHT</label>
-            <img src={sun}/>
+        <div id='toggleMode' >
+            <label>{theme.theme}</label>
+            <img src={theme.theme}/>
             <input type='checkbox' onChange={onHandleChange}/>
         </div>
     </div>

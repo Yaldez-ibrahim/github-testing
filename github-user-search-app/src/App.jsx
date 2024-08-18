@@ -15,7 +15,6 @@ function App() {
       <div id='allpageContent'>
         <Header></Header>
         <SearchBar></SearchBar>
-        <Contentcomponent></Contentcomponent>
       </div>
     </main>
     </ThemeContext.Provider>
