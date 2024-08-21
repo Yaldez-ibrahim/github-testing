@@ -36,8 +36,8 @@ function Contentcomponent(props) {
         <img src={props.avatar_url} id='lift'></img>
         <div id='right'>
             <div id='top'>
-                <h1>{props.name} </h1>
-                <label>Joined {props.created_at}</label>
+                <h1 className={theme+'Name'}>{props.name} </h1>
+                <label className={theme+'date'}>Joined {props.created_at}</label>
             </div>
             <label>@{props.login} </label>
             {

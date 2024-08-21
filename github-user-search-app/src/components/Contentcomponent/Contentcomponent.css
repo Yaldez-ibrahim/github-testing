@@ -38,10 +38,21 @@
     font-family: "space-Mono-bold" ;
     font-size: 23px;
 }
+.darkName{
+    color: #fff;
+}
+.lightName{
+    color: #2B3442;
+}
 #top>label{
     font-size: 15px;
-    color: #ffffff;
     font-weight: 400;
+}
+.lightdate{
+    color: #697C9A;
+}
+.darchdate{
+    color: #fff;
 }
 #right>label{
     font-size: 16px;
