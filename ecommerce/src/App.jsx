@@ -6,6 +6,7 @@ import Men from './pages/Men/Men';
 import Women from './pages/Women/Women';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
+import Product from './pages/product';
 
 function App() {
  return(
@@ -18,6 +19,7 @@ function App() {
         <Route path="Women" element={<Women/>}></Route>
         <Route path="About" element={<About/>}></Route>
         <Route path="Contact" element={<Contact/>}></Route>
+        <Route path="/product/:id" element={<Product/>}></Route>
       </Route>
     </Routes>
     </BrowserRouter>
