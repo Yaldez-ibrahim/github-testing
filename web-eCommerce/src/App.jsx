@@ -28,6 +28,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Layout />}>
+            <Route index element={<HomePage />} />
             <Route path='HomePage' element={<HomePage />} />
             <Route path='ShopPage' element={<ShopPage />} />
             <Route path='ContactPage' element={<ContactPage />} />
